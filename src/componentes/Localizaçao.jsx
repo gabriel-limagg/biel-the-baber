@@ -1,5 +1,5 @@
 import React from 'react'
-import '../app.css'
+import '../App'
 export default function Localizaçao() {
   return (
    /* From Uiverse.io by JaydipPrajapati1910 */ 
