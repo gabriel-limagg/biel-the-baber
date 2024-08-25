@@ -1,0 +1,158 @@
+/* Estilos para o button2 */
+.button2 {
+  width: 200px;
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 3.3em 0.7em 1.7em;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button2 > svg {
+  height: 40px;
+  position: absolute;
+  padding: 0px 100px;
+  margin-top: -32px;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+/* Estilos para o outro botão */
+.button1 {
+  background-color: #fff;
+  border: 1px solid #bc2a8d;
+  padding: 5px;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+}
+
+.button1 p {
+  position: absolute;
+  top: 0.6em;
+  left: 2rem;
+  margin: 0;
+  padding: 0;
+  transition: .5s;
+  color: #bc2a8d;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.button1 svg {
+  position: absolute;
+  top: 0.25em;
+  right: 3rem;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 2.2em;
+  width: 30px;
+  fill: #fff;
+}
+
+.button1:hover p {
+  left: 0.6em;
+  color: #fff;
+}
+
+.button1:hover svg {
+  opacity: 1;
+}
+
+.button1:hover {
+  background-color: #bc2a8d;
+}
+
+/* From Uiverse.io by JaydipPrajapati1910 */ 
+.loader {
+  width: 44.8px;
+  height: 44.8px;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50% 50% 0 50%;
+  background: #0000;
+  background-image: radial-gradient(circle 11.2px at 50% 50%,#0000 94%, #ff4747);
+}
+
+.loader:after {
+  animation: pulse-ytk0dhmd 1s infinite;
+  transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+  to {
+    transform: perspective(336px) translateZ(168px);
+    opacity: 0;
+  }
+}
+  
+
