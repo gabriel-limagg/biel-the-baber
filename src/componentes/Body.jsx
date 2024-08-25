@@ -1,7 +1,9 @@
 import React from 'react'
+import '../App'
 import Whatsap from './Whatsap'
 import Instagram from './Instagram'
 import Localizaçao from './Localizaçao'
+
 
 export default function Body() {
   return (

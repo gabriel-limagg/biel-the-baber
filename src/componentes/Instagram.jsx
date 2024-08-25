@@ -1,5 +1,5 @@
 import React from 'react'
-import '../app.css'
+import '../App'
 
 export default function Instagram() {
   return (
